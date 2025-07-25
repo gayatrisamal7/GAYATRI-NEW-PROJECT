@@ -3,20 +3,52 @@
     justify-content:space-between;
     padding: 10px;
     box-shadow: 0 1px 3px -2px black;
+    
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+       
+}
+.nav-logo p {
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+    }
+.nav-logo img {
+    width: 120px;
+    height: auto;
 }
 .nav-menu{
     display:flex;
     justify-content:center;
-    list-style-type: none;
+    list-style: none;
     gap:10px;
 }
-.nav-logo{
+.nav-login{
     display: flex;
     align-items: center;
-    gap: 10px;      
+    position: relative;
 }
-.nav-logo p {
-color: #171717;
-font-size: 38px;
-font-weight: 600;
+.nav-login button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    
 }
+.nav-login a:first-child button {
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin-right: -20px; /* This creates the overlap */
+    z-index: 2; /* Bring it above REGISTER */
+  }
